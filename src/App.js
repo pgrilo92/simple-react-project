@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Circles from './Circles'
 import CircleSelector from './CircleSelector'
+import Circles from './Circles'
+
 let circlesArr = [{circleSelected:false}, {circleSelected:false}, {circleSelected:false}, {circleSelected:false}]
 class App extends Component {
   constructor() {
@@ -37,7 +38,7 @@ class App extends Component {
         <header className="App-header">UNIT 4 FINAL ASSESSMENT</header>
         <main>
           <CircleSelector circles={this.state.circles} selectCircle={this.selectCircle}/>
-          <Circles circles={this.state.circles} />
+          <Circles circles={this.state.circles}/>
         </main>
       </div>
     );
